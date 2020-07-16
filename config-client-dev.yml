@@ -1,0 +1,18 @@
+server:
+  port: 7008
+spring:
+  application:
+    name: config-client-${server.port}
+  cloud:
+    config:
+      label: master
+      name: config-client
+      profile: dev
+      uri: http://localhost:7007
+eureka:
+  instance:
+    instance-id: config-client-${server.port}
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://localhost:7000/eureka,http://localhost:7001/eureka
