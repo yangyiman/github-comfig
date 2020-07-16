@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+server:
+  port: 7010
+>>>>>>> ce0c76e979973a66e19ec139fe1c0fbdae9a1f34
 spring:
   application:
     name: config-client-${server.port}
@@ -9,5 +14,8 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:7000/eureka,http://localhost:7001/eureka
+<<<<<<< HEAD
 config:
   version: 1
+=======
+>>>>>>> ce0c76e979973a66e19ec139fe1c0fbdae9a1f34
